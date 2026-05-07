@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OKUMAN プライバシーポリシー</title>
+<title>OKUMAN Privacy Policy</title>
 <style>
   :root {
     --bg: #0a0805;
@@ -17,7 +17,7 @@
     margin: 0;
     background: var(--bg);
     color: var(--gold);
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Yu Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
     line-height: 1.8;
     -webkit-text-size-adjust: 100%;
   }
@@ -63,11 +63,45 @@
     font-size: 12px;
     text-align: center;
   }
+  .lang-switch {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px 24px 0;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+  .lang-switch button {
+    background: transparent;
+    color: var(--gold-muted);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: color .15s, border-color .15s;
+  }
+  .lang-switch button:hover {
+    color: var(--gold);
+  }
+  .lang-switch button[aria-current="true"] {
+    color: var(--gold);
+    border-color: var(--gold-muted);
+  }
+  [hidden] { display: none !important; }
 </style>
 </head>
 <body>
-<main>
 
+<nav class="lang-switch" aria-label="Language">
+  <button type="button" data-set-lang="ja">日本語</button>
+  <button type="button" data-set-lang="en">English</button>
+  <button type="button" data-set-lang="ko">한국어</button>
+</nav>
+
+<!-- ===== 日本語 ===== -->
+<main data-lang="ja" hidden>
 <h1>OKUMAN プライバシーポリシー</h1>
 <div class="updated">最終更新日: 2026年5月2日</div>
 
@@ -137,10 +171,202 @@
   メール: <a href="mailto:sonp.jp@gmail.com">sonp.jp@gmail.com</a>
 </div>
 
-<footer>
-  © sonp
-</footer>
-
+<footer>© sonp</footer>
 </main>
+
+<!-- ===== English ===== -->
+<main data-lang="en" hidden>
+<h1>OKUMAN Privacy Policy</h1>
+<div class="updated">Last updated: May 2, 2026</div>
+
+<p>
+This Privacy Policy describes how sonp (the "Developer") handles user information in the mobile application "<strong>OKUMAN</strong>" (the "App").
+</p>
+
+<h2>1. Information We Collect</h2>
+<p>The App may collect or use the following information:</p>
+<ul>
+  <li><strong>Advertising Identifiers (IDFA / AAID)</strong>: Used for ad delivery and measurement, subject to user consent (iOS App Tracking Transparency / GDPR consent form).</li>
+  <li><strong>Game Center / Google Play Games account identifiers</strong>: Used to provide leaderboard functionality. These identifiers are managed by the platform. The App does not collect your real name or email address.</li>
+  <li><strong>In-game data</strong>: In-game progress such as cumulative earnings, owned assets, and statistics. This data is stored only on the user's device (SharedPreferences).</li>
+  <li><strong>Device information</strong>: General technical information such as OS version and language settings, automatically collected by ad SDKs.</li>
+</ul>
+
+<h2>2. Purpose of Use</h2>
+<ul>
+  <li>To provide App functionality (leaderboards, game progress management)</li>
+  <li>To deliver and optimize advertising</li>
+  <li>To analyze issues and improve quality</li>
+</ul>
+
+<h2>3. Third-Party Services</h2>
+<p>The App uses the following services. Information is processed in accordance with each service's privacy policy.</p>
+<ul>
+  <li>
+    <strong>Google AdMob (advertising)</strong> /
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+  </li>
+  <li>
+    <strong>Apple Game Center (iOS leaderboards)</strong> /
+    <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>
+  </li>
+  <li>
+    <strong>Google Play Games Services (Android leaderboards)</strong> /
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+  </li>
+</ul>
+<p>We do not sell or otherwise provide user information to any third party other than those listed above.</p>
+
+<h2>4. Advertising and Tracking</h2>
+<p>
+The App displays rewarded video ads and banner ads via Google AdMob. On iOS, the App Tracking Transparency system prompt is shown at launch. Even if the user does not allow tracking, ads will still be displayed as non-personalized ads. For users in the EU, UK, and Switzerland, a consent form is presented via the Google User Messaging Platform.
+</p>
+
+<h2>5. Data Storage and Deletion</h2>
+<p>
+In-game data is stored only on the user's device and is deleted when the App is uninstalled. Leaderboard data on Game Center / Google Play Games can be deleted from each platform's settings.
+</p>
+
+<h2>6. Children's Privacy</h2>
+<p>
+The App is not primarily directed at users under the age of 13. We do not knowingly collect information from users under the age of 13.
+</p>
+
+<h2>7. Changes to This Policy</h2>
+<p>
+This Policy may be revised without prior notice. Revisions take effect when posted on this page. The last updated date is shown at the top of this page.
+</p>
+
+<h2>8. Contact</h2>
+<p>
+For inquiries regarding this Policy or App support, please contact us at the email address below.
+</p>
+<div class="card">
+  Email: <a href="mailto:sonp.jp@gmail.com">sonp.jp@gmail.com</a>
+</div>
+
+<footer>© sonp</footer>
+</main>
+
+<!-- ===== 한국어 ===== -->
+<main data-lang="ko" hidden>
+<h1>OKUMAN 개인정보 처리방침</h1>
+<div class="updated">최종 업데이트: 2026년 5월 2일</div>
+
+<p>
+본 방침은 sonp(이하 "개발자")가 제공하는 모바일 애플리케이션 "<strong>OKUMAN</strong>"(이하 "본 앱")에서의 이용자 정보 취급에 관해 정한 것입니다.
+</p>
+
+<h2>1. 수집하는 정보</h2>
+<p>본 앱은 다음 정보를 수집 또는 이용할 수 있습니다.</p>
+<ul>
+  <li><strong>광고 식별자(IDFA / AAID)</strong>: 광고 게재 및 광고 효과 측정을 위해 이용자의 동의(iOS의 App Tracking Transparency / GDPR 동의 양식)에 근거하여 이용합니다.</li>
+  <li><strong>Game Center / Google Play Games 계정 식별자</strong>: 랭킹 기능 제공을 위해 플랫폼에서 관리되는 계정 식별자를 이용합니다. 본 앱은 이용자의 실명 및 이메일 주소를 취득하지 않습니다.</li>
+  <li><strong>인게임 데이터</strong>: 누적 획득 금액, 보유 자산, 통계 값 등의 인게임 진행 정보. 이 데이터는 이용자의 단말기 내(SharedPreferences)에만 저장됩니다.</li>
+  <li><strong>기기 정보</strong>: OS 버전, 언어 설정 등 광고 SDK가 자동으로 취득하는 일반적인 기술 정보.</li>
+</ul>
+
+<h2>2. 정보의 이용 목적</h2>
+<ul>
+  <li>본 앱의 기능(랭킹, 게임 진행 관리) 제공</li>
+  <li>광고 게재 및 광고 효과 최적화</li>
+  <li>오류 분석 및 품질 개선</li>
+</ul>
+
+<h2>3. 제3자에 대한 제공</h2>
+<p>본 앱은 다음 서비스를 이용하고 있으며, 각 서비스의 개인정보 처리방침에 따라 정보가 처리됩니다.</p>
+<ul>
+  <li>
+    <strong>Google AdMob(광고 게재)</strong> /
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>
+  </li>
+  <li>
+    <strong>Apple Game Center(iOS 랭킹)</strong> /
+    <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 개인정보처리방침</a>
+  </li>
+  <li>
+    <strong>Google Play Games Services(Android 랭킹)</strong> /
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>
+  </li>
+</ul>
+<p>위에 기재된 이외의 제3자에게 이용자 정보를 판매 또는 제공하지 않습니다.</p>
+
+<h2>4. 광고 및 추적에 관하여</h2>
+<p>
+본 앱은 Google AdMob에 의한 리워드 동영상 광고 및 배너 광고를 표시합니다. iOS에서는 실행 시 App Tracking Transparency 시스템 프롬프트를 표시하며, 이용자가 추적을 허용하지 않는 경우에도 비개인화 광고로서 광고 자체는 표시됩니다. EU, 영국, 스위스의 이용자에게는 Google User Messaging Platform을 통한 동의 양식을 표시합니다.
+</p>
+
+<h2>5. 데이터 저장 및 삭제</h2>
+<p>
+인게임 데이터는 이용자의 단말기 내에만 저장되며, 본 앱 삭제(언인스톨)에 의해 소거됩니다. Game Center / Google Play Games의 랭킹 데이터는 각 플랫폼 설정에서 삭제할 수 있습니다.
+</p>
+
+<h2>6. 아동의 개인정보</h2>
+<p>
+본 앱은 만 13세 미만의 이용자를 주된 대상으로 하지 않습니다. 만 13세 미만 이용자의 정보를 의도적으로 수집하지 않습니다.
+</p>
+
+<h2>7. 정책 개정</h2>
+<p>
+본 방침은 사전 통지 없이 개정될 수 있습니다. 개정된 내용은 본 페이지에 게재된 시점부터 효력이 발생합니다. 최종 업데이트 일자는 본 페이지 상단에 기재되어 있습니다.
+</p>
+
+<h2>8. 문의</h2>
+<p>
+본 방침 또는 본 앱 지원에 관한 문의는 아래 이메일 주소로 연락 주시기 바랍니다.
+</p>
+<div class="card">
+  이메일: <a href="mailto:sonp.jp@gmail.com">sonp.jp@gmail.com</a>
+</div>
+
+<footer>© sonp</footer>
+</main>
+
+<script>
+(function () {
+  var SUPPORTED = ['ja', 'en', 'ko'];
+  var TITLES = {
+    ja: 'OKUMAN プライバシーポリシー',
+    en: 'OKUMAN Privacy Policy',
+    ko: 'OKUMAN 개인정보 처리방침'
+  };
+
+  function pickLang() {
+    var q = new URLSearchParams(location.search).get('lang');
+    if (SUPPORTED.indexOf(q) >= 0) return q;
+    try {
+      var saved = localStorage.getItem('okuman_privacy_lang');
+      if (SUPPORTED.indexOf(saved) >= 0) return saved;
+    } catch (e) {}
+    var navLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().slice(0, 2);
+    if (SUPPORTED.indexOf(navLang) >= 0) return navLang;
+    return 'en';
+  }
+
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+    document.title = TITLES[lang] || TITLES.en;
+    document.querySelectorAll('main[data-lang]').forEach(function (el) {
+      el.hidden = el.getAttribute('data-lang') !== lang;
+    });
+    document.querySelectorAll('.lang-switch button[data-set-lang]').forEach(function (btn) {
+      var active = btn.getAttribute('data-set-lang') === lang;
+      if (active) btn.setAttribute('aria-current', 'true');
+      else btn.removeAttribute('aria-current');
+    });
+  }
+
+  document.querySelectorAll('.lang-switch button[data-set-lang]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-set-lang');
+      try { localStorage.setItem('okuman_privacy_lang', lang); } catch (e) {}
+      applyLang(lang);
+    });
+  });
+
+  applyLang(pickLang());
+})();
+</script>
+
 </body>
 </html>
